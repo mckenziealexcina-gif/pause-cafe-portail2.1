@@ -1,0 +1,31 @@
+
+> pause-cafe-portail-2@0.1.0 build
+> next build
+
+   ▲ Next.js 16.0.3 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 1404.6ms
+   Running TypeScript ...
+   Collecting page data using 9 workers ...
+   Generating static pages using 9 workers (0/9) ...
+   Generating static pages using 9 workers (2/9) 
+   Generating static pages using 9 workers (4/9) 
+   Generating static pages using 9 workers (6/9) 
+ ✓ Generating static pages using 9 workers (9/9) in 208.7ms
+   Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/chat
+├ ƒ /api/contact
+├ ƒ /api/newsletter
+├ ○ /chat
+└ ○ /support
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
