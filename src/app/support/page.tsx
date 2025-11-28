@@ -57,7 +57,7 @@ export default function SupportPage() {
                 {/* YouTube Video Player - Embedded */}
                 <iframe
                   className="h-full w-full border-0"
-                  src="https://www.youtube.com/embed/2uSZ8RcF2PE"
+                  src="https://www.youtube.com/embed/wkbWGoXd8eU"
                   title="Guide d'Entretien Machine Bistro - Pause Café Soleil"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
