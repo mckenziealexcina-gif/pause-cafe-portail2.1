@@ -3,6 +3,33 @@ interface ChatMessageProps {
   content: string;
 }
 
+// Fonction pour rendre les URLs cliquables
+function renderContentWithLinks(content: string, isUser: boolean) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = content.split(urlRegex);
+
+  return parts.map((part, index) => {
+    if (part.match(urlRegex)) {
+      return (
+        <a
+          key={index}
+          href={part}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`underline font-semibold transition-colors ${
+            isUser
+              ? "text-white hover:text-yellow-200"
+              : "text-coffee-orange hover:text-amber-600"
+          }`}
+        >
+          {part}
+        </a>
+      );
+    }
+    return <span key={index}>{part}</span>;
+  });
+}
+
 export default function ChatMessage({ role, content }: ChatMessageProps) {
   const isUser = role === "user";
 
@@ -24,7 +51,7 @@ export default function ChatMessage({ role, content }: ChatMessageProps) {
         }`}
       >
         <p className="whitespace-pre-wrap text-[15px] leading-relaxed">
-          {content}
+          {renderContentWithLinks(content, isUser)}
         </p>
 
         {/* Tail/pointer */}

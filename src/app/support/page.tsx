@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 export default function SupportPage() {
@@ -51,30 +53,29 @@ export default function SupportPage() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
             {/* Video 1 - Daily Maintenance */}
             <div className="group overflow-hidden rounded-lg bg-coffee-accent shadow-xl transition-all duration-300 hover:shadow-[0_8px_30px_rgba(243,164,36,0.3)]">
-              <div className="aspect-video bg-coffee-accent/50">
-                {/* Placeholder for video */}
-                <div className="flex h-full w-full items-center justify-center">
-                  <div className="text-center">
-                    <svg className="mx-auto mb-4 h-16 w-16 text-coffee-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <p className="text-coffee-gray">Vidéo à venir</p>
-                  </div>
-                </div>
+              <div className="aspect-video bg-black">
+                {/* YouTube Video Player - Embedded */}
+                <iframe
+                  className="h-full w-full border-0"
+                  src="https://www.youtube.com/embed/2uSZ8RcF2PE"
+                  title="Guide d'Entretien Machine Bistro - Pause Café Soleil"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className="p-6">
                 <h3 className="mb-3 text-xl font-semibold text-white">
-                  Entretien Quotidien
+                  Guide d'Entretien Bistro
                 </h3>
                 <p className="mb-4 text-coffee-gray">
-                  Les gestes essentiels à effectuer chaque jour pour maintenir vos machines en parfait état de fonctionnement.
+                  Tutoriel complet pour l'entretien et la maintenance de vos machines à café commerciales.
                 </p>
                 <div className="flex items-center gap-2 text-sm text-coffee-orange">
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span>5 minutes</span>
+                  <span>Vidéo disponible</span>
                 </div>
               </div>
             </div>
