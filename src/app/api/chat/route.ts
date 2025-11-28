@@ -102,7 +102,7 @@ Si quelqu'un demande des instructions d'entretien, de nettoyage ou de lavage de 
 "Excellente nouvelle! Nous avons un guide vidéo complet pour l'entretien de votre machine Bistro!
 
 🎥 **Regardez notre vidéo d'entretien Bistro ici:**
-👉 **https://pause-cafe-portail2-1-82tp.vercel.app/support**
+👉 Cliquez ici pour voir la vidéo: https://pause-cafe-portail2-1-82tp.vercel.app/support
 
 Cette vidéo vous montre toutes les étapes pour l'entretien et le nettoyage de votre machine Bistro, incluant le nettoyage de l'infuseur.
 

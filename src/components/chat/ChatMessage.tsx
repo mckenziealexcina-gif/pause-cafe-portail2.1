@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface ChatMessageProps {
   role: "user" | "assistant";
   content: string;
@@ -10,6 +12,34 @@ function renderContentWithLinks(content: string, isUser: boolean) {
 
   return parts.map((part, index) => {
     if (part.match(urlRegex)) {
+      // Vérifier si c'est un lien interne (même domaine)
+      const isInternalLink = part.includes('pause-cafe-portail') || part.includes('vercel.app');
+
+      if (isInternalLink) {
+        // Extraire le chemin relatif pour les liens internes
+        try {
+          const url = new URL(part);
+          const pathname = url.pathname;
+          return (
+            <Link
+              key={index}
+              href={pathname}
+              className={`underline font-semibold transition-colors ${
+                isUser
+                  ? "text-white hover:text-yellow-200"
+                  : "text-coffee-orange hover:text-amber-600"
+              }`}
+            >
+              {part}
+            </Link>
+          );
+        } catch {
+          // Si l'URL n'est pas valide, afficher comme texte
+          return <span key={index}>{part}</span>;
+        }
+      }
+
+      // Lien externe
       return (
         <a
           key={index}
