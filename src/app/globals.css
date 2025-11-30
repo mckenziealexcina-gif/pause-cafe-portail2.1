@@ -186,7 +186,7 @@ body {
 @keyframes scroll-reveal {
   from {
     opacity: 0;
-    transform: translateY(60px) scale(0.95);
+    transform: translateY(69px) scale(0.93);
   }
   to {
     opacity: 1;
@@ -196,7 +196,7 @@ body {
 
 .scroll-section {
   opacity: 0;
-  transform: translateY(60px) scale(0.95);
+  transform: translateY(69px) scale(0.93);
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
               transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -209,10 +209,10 @@ body {
 /* NEW - Button Pulse Glow */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 40px rgba(243, 164, 36, 0.6);
+    box-shadow: 0 0 46px rgba(243, 164, 36, 0.6);
   }
   50% {
-    box-shadow: 0 0 60px rgba(243, 164, 36, 0.9), 0 0 80px rgba(243, 164, 36, 0.5);
+    box-shadow: 0 0 69px rgba(243, 164, 36, 0.9), 0 0 92px rgba(243, 164, 36, 0.5);
   }
 }
 
@@ -226,7 +226,7 @@ body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-17px);
   }
 }
 
@@ -241,11 +241,11 @@ body {
     opacity: 0;
   }
   50% {
-    transform: translateY(20px) scaleY(1);
+    transform: translateY(23px) scaleY(1);
     opacity: 1;
   }
   100% {
-    transform: translateY(40px) scaleY(0);
+    transform: translateY(46px) scaleY(0);
     opacity: 0;
   }
 }

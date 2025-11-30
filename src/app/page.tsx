@@ -79,7 +79,7 @@ export default function Home() {
           </p>
 
           {/* CTA Buttons - IMPROVED! */}
-          <div className="flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:gap-6">
+          <div className="flex w-full max-w-md flex-col gap-4 sm:max-w-none sm:flex-row sm:justify-center sm:gap-6">
             {/* Support Button - SUPER VISIBLE */}
             <Link
               href="/support"
@@ -110,8 +110,8 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* MEGA VISIBLE Scroll Indicator */}
-          <div className="absolute bottom-8 flex flex-col items-center gap-3 animate-bounce-slow">
+          {/* MEGA VISIBLE Scroll Indicator - Below Buttons */}
+          <div className="mt-16 flex flex-col items-center gap-3 animate-bounce-slow md:mt-20">
             <span className="text-sm font-semibold tracking-[0.2em] text-coffee-orange/90">DÉCOUVRIR</span>
             <div className="relative flex flex-col items-center gap-2">
               <svg className="h-8 w-8 text-coffee-orange animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
