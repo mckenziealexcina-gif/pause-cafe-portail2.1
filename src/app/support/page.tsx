@@ -54,12 +54,12 @@ export default function SupportPage() {
             {/* Video 1 - Daily Maintenance */}
             <div className="group overflow-hidden rounded-lg bg-coffee-accent shadow-xl transition-all duration-300 hover:shadow-[0_8px_30px_rgba(243,164,36,0.3)]">
               <div className="aspect-video bg-black">
-                {/* YouTube Video Player - Embedded */}
+                {/* Rumble Video Player - Embedded */}
                 <iframe
                   className="h-full w-full border-0"
-                  src="https://www.youtube.com/embed/wkbWGoXd8eU"
+                  src="https://rumble.com/embed/v72fi5c/"
                   title="Guide d'Entretien Machine Bistro - Pause Café Soleil"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  frameBorder="0"
                   allowFullScreen
                 ></iframe>
               </div>
