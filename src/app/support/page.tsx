@@ -56,10 +56,10 @@ export default function SupportPage() {
               <div className="aspect-video bg-black">
                 {/* Rumble Video Player - Embedded */}
                 <iframe
-                  className="h-full w-full border-0"
-                  src="https://rumble.com/embed/v72fi5c/"
+                  className="h-full w-full"
+                  style={{ border: 0 }}
+                  src="https://rumble.com/embed/v708u54/?pub=1mbscg"
                   title="Guide d'Entretien Machine Bistro - Pause Café Soleil"
-                  frameBorder="0"
                   allowFullScreen
                 ></iframe>
               </div>
