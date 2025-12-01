@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
 
     const response = await anthropic.messages.create({
       model: "claude-3-haiku-20240307",
-      max_tokens: 1024,
+      max_tokens: 2048,
       system: `Tu es l'assistant virtuel de Pause Café Soleil, une entreprise québécoise spécialisée dans les services de café pour entreprises dans la région de Québec.
 
 IMPORTANT - TOUJOURS COMMENCER LA PREMIÈRE RÉPONSE PAR:
